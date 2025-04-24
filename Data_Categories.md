@@ -1,14 +1,16 @@
 # 🗂️ Collection Data Categories Map v.2.0 🚀
 *A cheat-sheet for structuring intelligence inputs*
 
-| 🔠 | **Reliability (Source)** | 🔢 | **Credibility (Info)** |
-|---|--------------------------|---|------------------------|
-| A | Always reliable          | 1 | Confirmed by direct observation |
-| B | Usually reliable         | 2 | Verified by independent sources |
-| C | Fairly reliable          | 3 | Logical / probable |
-| D | Doubtful                 | 4 | Possible, unverified |
-| E | Unreliable               | 5 | Improbable |
-| F | Cannot be judged         | 6 | Contradictory / false |
+## 🛡️ NATO Reliability & Credibility Matrix
+
+| 🔠 | **Source Reliability** | 🔢 | **Information Credibility / Accuracy** |
+|---|------------------------|---|----------------------------------------|
+| **A** | **Completely reliable** – no doubt of authenticity, trustworthiness or competency; long record of valid reporting | **1** | **Confirmed by independent sources** – logical and consistent with other known information |
+| **B** | **Usually reliable** – minor doubts; history of mostly valid information | **2** | **Probably true** – logical and consistent, but not yet confirmed |
+| **C** | **Fairly reliable** – some doubt; has provided valid information in the past | **3** | **Possibly true** – reasonably logical; partially corroborated |
+| **D** | **Not usually reliable** – significant doubt; occasional valid information | **4** | **Doubtful** – possible but not logical; no corroboration |
+| **E** | **Unreliable** – lacks authenticity, trustworthiness or competency; history of invalid information | **5** | **Improbable** – illogical and contradicted by other information |
+| **F** | **Reliability cannot be judged** – new or unknown source; no basis for evaluation | **6** | **Truth cannot be judged** – insufficient information to assess validity |
 
 > **Tip 🔧** Tag every record “`<Reliability><Credibility>`” (e.g. **B2**) at ingest to speed triage and analytic weighting.
 
