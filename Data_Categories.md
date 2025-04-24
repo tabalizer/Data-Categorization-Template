@@ -1,123 +1,160 @@
-# 🗂️ Collection Data Categories Map v.2.0 🚀
-*A cheat-sheet for structuring intelligence inputs*
+# 🗂️ Collection Data Categories Map **v.2 – FULL** 🚀  
+*Practical cheat-sheet — now with added entities and attributes + NATO-aligned ratings*
+
+---
 
 ## 🛡️ NATO Reliability & Credibility Matrix
 
 | 🔠 | **Source Reliability** | 🔢 | **Information Credibility / Accuracy** |
 |---|------------------------|---|----------------------------------------|
-| **A** | **Completely reliable** – no doubt of authenticity, trustworthiness or competency; long record of valid reporting | **1** | **Confirmed by independent sources** – logical and consistent with other known information |
-| **B** | **Usually reliable** – minor doubts; history of mostly valid information | **2** | **Probably true** – logical and consistent, but not yet confirmed |
-| **C** | **Fairly reliable** – some doubt; has provided valid information in the past | **3** | **Possibly true** – reasonably logical; partially corroborated |
-| **D** | **Not usually reliable** – significant doubt; occasional valid information | **4** | **Doubtful** – possible but not logical; no corroboration |
-| **E** | **Unreliable** – lacks authenticity, trustworthiness or competency; history of invalid information | **5** | **Improbable** – illogical and contradicted by other information |
-| **F** | **Reliability cannot be judged** – new or unknown source; no basis for evaluation | **6** | **Truth cannot be judged** – insufficient information to assess validity |
+| **A** | Completely reliable | **1** | Confirmed by independent sources |
+| **B** | Usually reliable | **2** | Probably true - logical & consistent |
+| **C** | Fairly reliable | **3** | Possibly true - partially corroborated |
+| **D** | Not usually reliable | **4** | Doubtful – no corroboration |
+| **E** | Unreliable | **5** | Improbable – contradicted elsewhere |
+| **F** | Cannot be judged | **6** | Truth cannot be judged |
 
-> **Tip 🔧** Tag every record “`<Reliability><Credibility>`” (e.g. **B2**) at ingest to speed triage and analytic weighting.
+*Tag every datapoint “`<Reliability><Credibility>`” (e.g. **B2**).*
 
 ---
 
 ## 🎯 Priority Flags
-| Flag | Meaning | When to use |
-|------|---------|-------------|
-| 🔥 **HOT** | Immediate operational impact | Real-time threat, active target |
-| ⏳ **TIM** | Time-sensitive | Opportunity window < 72 h |
-| 🧊 **COLD** | Background | Strategic, no urgency |
+| Flag | Meaning | Trigger |
+|------|---------|---------|
+| 🔥 **HOT** | Immediate operational impact | Active threat, surveillance target |
+| ⏳ **TIM** | Time-sensitive (≤ 72 h) | Perishable opportunity |
+| 🧊 **COLD** | Background / strategic | No urgency |
 
 ---
 
-## 🌐 Collection Pillars (10 core buckets)
+## 📌 Entity Attribute Catalogue
 
 ### 1. 👤 Individuals
-- **🆔 Identity** – name, aliases, biometric keys  
-- **📍 Presence** – current & historic locations (lat/long, time-stamps)  
-- **🎖️ Role & Rank** – official, community, covert  
-- **📞 Comms** – phone, email, handles, crypto-IDs  
-- **💰 Holdings** – bank refs, crypto wallets, high-value assets  
-- **🤝 Networks** – associates, family, org ties (link-chart ready)  
+| **Attribute Group** | **Fields** |
+|---------------------|------------|
+| 🆔 **Identity** | Full Name, Aliases, Identity No./SSN, Nationality (primary/secondary), Passport No., Biometrics (DNA, fingerprints, face, iris) |
+| 📍 **Address & Presence** | Residential Address, Workplace, Current Location (live), Historical Movements (GPS, travel records) |
+| 🧑 **Characteristics** | Physical Description, Health Status, Behaviour traits (trust / risk), Psychological profile |
+| 💼 **Professional / Personal** | Roles & Responsibilities, Employer, Daily Routine, Education, Skills, Hobbies |
+| 💰 **Financial / Assets** | Bank accts, Crypto wallets, Investments, High-value items, Real estate |
+| 📞 **Communications** | Phone numbers (current/historic), Email, Social media, Secure apps (Signal, Telegram, WhatsApp, Matrix) |
+| 🎖 **Titles & Ranks** | Official rank, Honorifics, Community roles |
+| 🔗 **Relations / Networks** | Family, Associates, Org affiliations, Event involvement, Ownership links |
+
+---
 
 ### 2. 🏢 Organizations
-- **🏷️ Identity** – legal name, branding, registration No.  
-- **🏗️ Structure** – hierarchy, key leaders, subsidiaries  
-- **📍 Footprint** – HQ & global sites (geo-JSON ready)  
-- **💳 Financials** – accounts, revenue streams, sanctions risk  
-- **🔗 External Links** – partners, suppliers, hostile peers  
+| **Attribute Group** | **Fields** |
+|---------------------|------------|
+| 🏷 **Identity** | Legal name, Acronyms, Brands, Registration No., Logos |
+| 🏗 **Ownership & Structure** | Shareholders, Parent / Subsidiaries, Org chart, Board, Key leaders |
+| 📍 **Footprint** | HQ, Branches, Warehouses, Data centres, Geocoords |
+| 👥 **Personnel** | Management, Employees, Contractors, Advisors |
+| 💰 **Finance** | Accounts, Revenue, Funding sources, Credit rating, Sanctions status |
+| 🛍 **Products / Services** | Lines of business, Trade names, NAICS / HS codes |
+| 🤝 **External Links** | Partners, Suppliers, Competitors, NGOs, OCG ties |
+| 🏗 **Infrastructure & Assets** | Facilities (buildings, plants), Vehicles, Machinery, IT systems |
+| 🎭 **Roles & Activities** | Mandate, Campaign schedules, Key events |
+| ⚖ **Legal** | Licences, Court cases, Compliance status |
+
+---
 
 ### 3. 🏠 Properties & Sites
-- **📍 Geo-loc** – address, coordinates, locality context  
-- **📝 Specs** – area, construction, utilities, entry points  
-- **🔒 Security** – access controls, CCTV, guards, alarms  
-- **⛩️ Cover** – front companies, false signage, dual-use indicators  
+| **Attribute Group** | **Fields** |
+|---------------------|------------|
+| 📍 **Location** | Address, Geo coords, Admin area (city, district, country) |
+| 👥 **Ownership** | Owner type (individual / entity), Current owner, Previous owners |
+| 📝 **Property Details** | Area (m²), Zoning, Construction date, Usage (description), Property ID, Utilities |
+| 🔒 **Security** | Access points, CCTV, Barriers, Alarm systems |
+| ⛩ **Cover Indicators** | Front company, Dual-use, False signage |
+
+---
 
 ### 4. 🏎️ Physical Assets
-- **🚗 Vehicles / Equipment** – make, model, VIN/serial, condition  
-- **💎 High-Value Items** – art, bullion, weapons, bespoke tech  
-- **📦 Inventory Chains** – supplier → depot → field unit  
+| **Attribute Group** | **Fields** |
+|---------------------|------------|
+| 🆔 **Identification** | Asset ID, Name, Make/Model, Serial/VIN, Category (vehicle, weapon, art) |
+| 🔄 **Ownership** | Current owner, Previous owners, Lease/loan status |
+| 📍 **Location** | Storage site, Transit route, Last seen (time-stamp) |
+| ⚙ **Specs** | Configuration, Condition, Capability |
+| 📂 **Docs** | Title, Registration, Maintenance logs |
+
+---
 
 ### 5. 💾 Digital Assets
-- **🌐 Hosting** – domain, IP, cloud tenancy, country routing  
-- **🔐 Access** – credential lists, MFA seeds, privileged roles  
-- **📜 Audit Trails** – last login, data exfil events, ownership changes  
+| **Attribute Group** | **Fields** |
+|---------------------|------------|
+| 🌐 **Hosting** | Domain, IP, Cloud tenant, Geo-routing |
+| 🔗 **Virtual ID** | UUID, Object ID, Blockchain token |
+| 🔄 **Ownership** | Admin account, Custodian, Previous holders |
+| 🔐 **Access & Permissions** | Credential list, Privileged roles, MFA |
+| 📝 **Metadata** | Creation date, Hash, File type, Size, Tagging, DLP marks |
+| 📈 **Audit Trail** | Last login, Modification history, Exfil events |
+
+---
 
 ### 6. 💬 Communications
-- **📞 Voice** – call detail records, IMSI/IMEI, push-to-talk IDs  
-- **💻 Messaging** – Telegram, Signal, IRC, forums  
-- **📧 Email** – headers, routing, PGP keys  
-- **📻 RF/SAT** – frequency, modulation, TDoA fixes  
+- **Voice:** CDRs, IMSI/IMEI, Push-to-talk IDs  
+- **Messaging:** App ID, Handle, Group membership, Key-exchange logs  
+- **Email:** Header paths, PGP fingerprints, MX records  
+- **RF/SAT:** Frequency, Modulation, Burst timings, TDoA fixes  
+
+---
 
 ### 7. 🛰️ Geospatial & Movement
-- **🌍 Imagery** – optical, SAR, IR, drone captures (sensor, pass-time)  
-- **🚚 Mobility** – cell-tower pings, ADS-B, AIS, license-plate ALPR  
-- **🛣️ Routes** – pattern-of-life, choke points, fallback sites  
+- **Imagery:** Sensor type, Pass-time, Resolution, Target bounding-box  
+- **Mobility:** Cell-tower pings, ADS-B, AIS, ALPR hits, Toll-road data  
+- **Routes & Patterns:** Waypoints, Duration, Anomalies, Choke-points  
+
+---
 
 ### 8. 💳 Financial & Economic
-- **🏦 Accounts** – IBAN, correspondent bank, balance snapshots  
-- **🪙 Crypto** – addresses, mixers, NFT holdings, exchange KYC docs  
-- **📈 Transactions** – amounts, counterparties, typologies (trade-based ML, hawala)  
+- **Accounts:** IBAN, Bank, Balance snapshots, Beneficial owner  
+- **Transactions:** Date, Amount, Counterparty, Channel, Typology  
+- **Crypto:** Address, Tx hash, Mixer use, NFT holdings  
+- **Trade:** Invoices, Bills of lading, Customs declarations  
+
+---
 
 ### 9. 📅 Events & Incidents
-- **🕒 When** – start, end, duration, time-zone  
-- **🌍 Where** – geo-point, physical/digital domain  
-- **❓ Why** – intent, ideology, profit, coercion  
-- **⚙️ How** – TTPs, malware family, weapon system, protest tactics  
-- **📊 Impact** – casualties, cost, reputational, legal  
+| Field | Examples |
+|-------|----------|
+| 🕒 **Time** | Start, End, Duration, Time-zone |
+| 🌍 **Location** | Geo-point, Venue, Digital domain |
+| ❓ **Motivation** | Ideology, Profit, Retaliation |
+| ⚙ **Method** | TTPs, Weapon system, Malware family |
+| 👥 **Actors** | Individuals, Orgs, Assets involved |
+| 📊 **Impact** | Casualties, Cost, Service disruption |
+| 📂 **Classification** | Security incident, Safety breach, Notable occurrence |
+
+---
 
 ### 10. 📢 Influence & Media
-- **📰 Coverage** – headlines, outlets, sentiment score  
-- **🤖 Social Bots** – bot-nets, amplification metrics, sock-puppets  
-- **🎯 Target Audience** – demographic, language, grievances  
+- **Media coverage:** Outlet, Headline, Tone/Sentiment  
+- **Social engagement:** Bots, Amplification rate, Hashtags  
+- **Narratives:** Key talking-points, Target audience, Language  
 
 ---
 
 ## 🧩 Cross-Cutting Metadata
-| Field | Purpose |
-|-------|---------|
-| 🗂️ **Case/Op ID** | tie back to operation or requirement |
-| 🔐 **Classification** | e.g. *SECRET//REL NORWAY-FVEY* |
-| 🏷️ **Handling Caveats** | *ORCON*, *NOFORN*, *EYES+UK* |
-| 🔄 **Chain of Custody** | hash values, collector, timestamp |
-| ✍️ **Analyst Notes** | evaluation, gaps, next-step tasks |
+- **🗂 Case/Op ID** • **🔐 Classification & Caveats** • **🔄 Chain of custody (hash, collector, timestamp)** • **✍️ Analyst notes / Gaps**
 
 ---
 
-## ⛔ Common Pitfalls / Risk Factors ⚠️
-- **Over-collection 📈** – drowns analysts; define “nice-to-have” vs “need-to-have”.
-- **Source bleed 🩸** – same HUMINT reused across reports → circular reporting.
-- **Metadata leaks 🔓** – careless EXIF, share-links exposing targets.
-- **Legal overstep ⚖️** – check domestic SIGINT & privacy statutes before tasking.
+## ⚠️ Pitfalls & Counter-Measures
+- **Over-collection** → use priority flags  
+- **Circular reporting** → tag sources uniquely  
+- **Metadata leaks** → strip EXIF / secure share-links  
+- **Legal overstep** → validate against privacy & SIGINT law  
 
 ---
 
 ## 📖 ReadMe
 | | |
 |---|---|
-| **✍️ Author** | [@tabalizer](https://twitter.com/tabalizer) |
-| **📌 Usage** | Copy sections into your collection plan or MISP tags; adjust emojis as needed. |
-| **📅 Version** | **v.2.0** *(24 Apr 2025)* |
-| **🔄 Changelog** | Added priority flags, reliability/credibility matrix, comms & influence pillars, risk pitfalls. |
-| **🆕 Updated** | 24.04.2025 |
-| **📜 License** | [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
-
-> **Balanced view ✅ / ⚠️**  
-> The framework accelerates structured ingestion **but** can be mis-applied as a bureaucratic checkbox. Keep it **lean**—collect only what drives decisions, and revisit fields quarterly to cull dead weight.
+| **Author** | [@tabalizer]([https://twitter.com/tabalizer](https://github.com/tabalizer) |
+| **Version** | **v.2** (24 Apr 2025) |
+| **Change-log** | Major update
+| **License** | Creative Commons BY 4.0 |
 
 ---
