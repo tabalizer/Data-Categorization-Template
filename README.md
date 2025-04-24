@@ -18,6 +18,7 @@ This document is designed to facilitate structured data categorization for inves
 - 🔍 Security & Intelligence Agencies
 
 ## 📅 Version History
+- **v2 (22.04.2025)** - Major update!
 - **v1.2 (10.02.2025)** – Updated terminology, improved categorization, added emojis/icons for clarity.
 - **v1.0 (15.05.2021)** – Initial release.
 
